@@ -1,4 +1,5 @@
 var x,y;
+var next=0;
 function resolution(){
 	x=window.screen.availHeight;
 	y=window.screen.availWidth;
@@ -297,7 +298,7 @@ function sidebar_show(){
 	}
 }
 
-var next=0;
+
 function nexti(){
 	if(next==0){
 		document.getElementById("gif").style.display="none";
@@ -305,8 +306,33 @@ function nexti(){
 		document.getElementById("giftwo").style.display="block";
 		giftwo.className="animated fadeIn";
 		document.getElementById("linetwo").style.display="block";
+                document.getElementById("Next").style.display="none";
+                document.getElementById("Next1").style.display="block";
 	}
+       /* else
+             {
+               		document.getElementById("pageOne").style.display="none";
+		document.getElementById("mainPage").style.display="block";
+               }
+         */
 }
+
+
+var next_1=0;
+
+function next1(){
+
+	if(next_1==0){
+
+		document.getElementById("pageOne").style.display="none";
+
+		document.getElementById("mainPage").style.display="block";
+
+	}
+
+}
+
+
 
 var click=0;
 function clicki(){
@@ -315,7 +341,6 @@ function clicki(){
 		document.getElementById("mainPage").style.display="block";
 	}
 }
-
 
 
 
