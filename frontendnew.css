@@ -57,6 +57,15 @@
 	
 }
 #Next{
+        display:block;
+	position:absolute;
+	bottom: 18%;
+	left: 41.5%;
+	font-size: 10vw;
+	color:yellow;
+}
+#Next1{
+        display:none;
 	position:absolute;
 	bottom: 18%;
 	left: 41.5%;
@@ -185,7 +194,7 @@ width: 100%;
 	top:101%;
 	left:0%;
 	right:0%;
-	height:101%;
+	height:110%;
 	width:100%;
 	background:red;
 }
@@ -297,6 +306,14 @@ width: 100%;
 	background:red;
 }
 #settingpage{
+	display:none;
+	position:absolute;
+	top:20%;
+	height:80%;
+	width:100%;
+	background:red;
+}
+#blogPage{
 	display:none;
 	position:absolute;
 	top:20%;
@@ -532,5 +549,16 @@ width: 100%;
 	top:5%;
 	left:15%;
 	font-size: 900%;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+#blogHeader{
+	display:none;
+	color:white;	
+	position:absolute;
+	top:5%;
+	left:15%;
+	font-size: 700%;
+        
+        
 	font-family: "Times New Roman", Georgia, Serif;
 }
