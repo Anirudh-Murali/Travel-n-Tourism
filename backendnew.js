@@ -36,13 +36,79 @@ function slide(){
 		TweenMax.to('#mainPage',.25,{y:-180});
 		TweenMax.to('#facebook',.5,{y:-1800});
 		TweenMax.to('#google',.5,{y:-1800});
-		TweenMax.to('#home1',.5,{y:-1760});
+		TweenMax.to('#home1',.5,{y:-1680});
 		
 		p=2;
 	}
 	
 	
 }
+
+var first = 0
+function bigfirst(){
+	
+	if(first==0){
+		document.getElementById("first").style.right="0%";
+		document.getElementById("first").style.width="100%";
+		document.getElementById("first").style.height="20%";
+		TweenMax.to('#first',.3,{y:-1330});
+		document.getElementById("first").style.opacity=".8";
+		document.getElementById("contact").style.display="none";
+	//	document.getElementById('first').style.display = "none";
+		document.getElementById('second').style.display = "none";
+		document.getElementById('third').style.display = "none";
+		document.getElementById('fourth').style.display = "none";
+		document.getElementById('fifth').style.display = "none";
+		document.getElementById('sixth').style.display = "none";
+		document.getElementById('seventh').style.display = "none";
+		document.getElementById('eight').style.display = "none";
+		document.getElementById('setting1').style.display = "none";
+		document.getElementById('help1').style.display = "none";
+		document.getElementById('settings').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('blogPage').style.display = "block";
+			heading.className="animated fadeIn";
+		},300);
+		setTimeout(function(){
+			document.getElementById('blogHeader').style.display = "block";
+			blogHeader.className="animated fadeIn";
+		},300);
+		first =1;
+	}
+	else if(first == 1){
+		
+		TweenMax.to('#first',.3,{y:0});
+		document.getElementById("first").style.width="90%";
+		document.getElementById("first").style.height="23%";
+		document.getElementById("first").style.right="5%";
+		document.getElementById("first").style.opacity=".2";
+		document.getElementById('blogPage').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('blogHeader').style.display = "none";
+			blogHeader.className="animated fadeOut";
+		},0001);
+		setTimeout(function(){
+	//	document.getElementById('first').style.display = "block";
+		document.getElementById('second').style.display = "block";
+		document.getElementById('third').style.display = "block";
+		document.getElementById('fourth').style.display = "block";
+		document.getElementById('fifth').style.display = "block";
+		document.getElementById('sixth').style.display = "block";
+		document.getElementById('seventh').style.display = "block";
+		document.getElementById('eight').style.display = "block";
+		document.getElementById('setting1').style.display = "block";
+		document.getElementById('help1').style.display = "block";
+		document.getElementById('settings').style.display = "block";
+		},300);
+		setTimeout(function(){
+			document.getElementById("contact").style.display="block";
+		},700);
+		first=0;
+	}
+	
+}
+
+
 function bigeight(){
 	
 	if(p==2){
