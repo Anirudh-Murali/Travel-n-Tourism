@@ -8,6 +8,8 @@ function resolution(){
 function apply(){
 document.getElementById('appMainScreen').style.height=x;
 document.getElementById('appMainScreen').style.width=y;
+
+
 }
 var p=0;
 
@@ -15,13 +17,14 @@ function login(){
 	setTimeout(function(){
 			document.getElementById('heading').style.display = "block";
 			heading.className="animated fadeIn";
-		},500);
+		},2000);
 	
 	setTimeout(function(){
 			document.getElementById('flash').style.display = "none";
-			document.getElementById('appMainScreen').style.display = "block";
-		},10000);
+			document.getElementById('pageOne').style.display = "block";
+		},4000);
 }
+
 
 
 function slide(){
@@ -29,16 +32,80 @@ function slide(){
 	if(p==0){
 		TweenMax.to('.triangle',.25,{y:-1000});
 		TweenMax.to('.squarebox',.25,{y:-1000});
-		TweenMax.to('.mainPage',.25,{y:-1000});
+		TweenMax.to('#mainPage',.25,{y:-180});
 		TweenMax.to('#facebook',.5,{y:-1800});
 		TweenMax.to('#google',.5,{y:-1800});
-		TweenMax.to('#home1',.5,{y:-1750});
+		TweenMax.to('#home1',.5,{y:-1680});
 		
 		p=2;
 	}
 	
 	
 }
+
+function bigone(){
+	
+	if(p==2){
+		document.getElementById("first").style.right="0%";
+		document.getElementById("first").style.width="100%";
+		document.getElementById("first").style.height="20%";
+		TweenMax.to('#first',.3,{y:-1330});
+		document.getElementById("first").style.opacity=".8";
+		document.getElementById("contact").style.display="none";
+		
+		document.getElementById('second').style.display = "none";
+		document.getElementById('third').style.display = "none";
+		document.getElementById('fourth').style.display = "none";
+		document.getElementById('fifth').style.display = "none";
+		document.getElementById('sixth').style.display = "none";
+		document.getElementById('seventh').style.display = "none";
+		document.getElementById('eight').style.display = "none";
+		//document.getElementById('setting1').style.display = "none";
+		document.getElementById('help1').style.display = "none";
+		document.getElementById('settings').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('contactpage').style.display = "block";
+			heading.className="animated fadeIn";
+		},300);
+		setTimeout(function(){
+			document.getElementById('contactus').style.display = "block";
+			contactus.className="animated fadeIn";
+		},300);
+		p=3;
+	}
+	else if(p==3){
+		
+		TweenMax.to('#first',.3,{y:0});
+		document.getElementById("first").style.width="27.5%";
+		document.getElementById("first").style.height="15%";
+		document.getElementById("first").style.right="3%";
+		document.getElementById("first").style.opacity=".2";
+		document.getElementById('contactpage').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('contactus').style.display = "none";
+			contactus.className="animated fadeOut";
+		},0001);
+		setTimeout(function(){
+		document.getElementById('first').style.display = "block";
+		document.getElementById('second').style.display = "block";
+		document.getElementById('third').style.display = "block";
+		document.getElementById('fourth').style.display = "block";
+		document.getElementById('fifth').style.display = "block";
+		document.getElementById('sixth').style.display = "block";
+		document.getElementById('seventh').style.display = "block";
+		document.getElementById('eight').style.display = "block";
+		//document.getElementById('setting1').style.display = "block";
+		document.getElementById('help1').style.display = "block";
+		document.getElementById('settings').style.display = "block";
+		},300);
+		setTimeout(function(){
+			document.getElementById("contact").style.display="block";
+		},700);
+		p=2;
+	}
+	
+}
+
 function bigeight(){
 	
 	if(p==2){
@@ -55,7 +122,7 @@ function bigeight(){
 		document.getElementById('fifth').style.display = "none";
 		document.getElementById('sixth').style.display = "none";
 		document.getElementById('seventh').style.display = "none";
-		document.getElementById('setting1').style.display = "none";
+		//document.getElementById('setting1').style.display = "none";
 		document.getElementById('help1').style.display = "none";
 		document.getElementById('settings').style.display = "none";
 		setTimeout(function(){
@@ -71,9 +138,9 @@ function bigeight(){
 	else if(p==3){
 		
 		TweenMax.to('#eight',.3,{y:0});
-		document.getElementById("eight").style.width="27%";
-		document.getElementById("eight").style.height="10.7%";
-		document.getElementById("eight").style.right="5%";
+		document.getElementById("eight").style.width="27.5%";
+		document.getElementById("eight").style.height="15%";
+		document.getElementById("eight").style.right="3%";
 		document.getElementById("eight").style.opacity=".2";
 		document.getElementById('contactpage').style.display = "none";
 		setTimeout(function(){
@@ -88,7 +155,7 @@ function bigeight(){
 		document.getElementById('fifth').style.display = "block";
 		document.getElementById('sixth').style.display = "block";
 		document.getElementById('seventh').style.display = "block";
-		document.getElementById('setting1').style.display = "block";
+		//document.getElementById('setting1').style.display = "block";
 		document.getElementById('help1').style.display = "block";
 		document.getElementById('settings').style.display = "block";
 		},300);
@@ -109,7 +176,7 @@ var six=0;
 		TweenMax.to('#sixth',.3,{y:-1140});
 		document.getElementById("sixth").style.opacity=".8";
 		document.getElementById("settings").style.display="none";
-		document.getElementById("setting1").style.display="none";
+		//document.getElementById("setting1").style.display="none";
 		document.getElementById("contact").style.display="none";
 		document.getElementById('first').style.display = "none";
 		document.getElementById('second').style.display = "none";
@@ -127,9 +194,9 @@ var six=0;
 	 }
 	 else{
 		 document.getElementById('settingpage').style.display = "none";
-		 document.getElementById("sixth").style.width="62%";
-		document.getElementById("sixth").style.height="22%";
-		document.getElementById("sixth").style.right="32.8%";
+		 document.getElementById("sixth").style.width="34%";
+		document.getElementById("sixth").style.height="15%";
+		document.getElementById("sixth").style.left="3%";
 		document.getElementById("sixth").style.opacity=".2";
 		TweenMax.to('#sixth',.3,{y:0});
 		setTimeout(function(){
@@ -144,7 +211,7 @@ var six=0;
 		document.getElementById("contact").style.display="block";
 		},300);
 		setTimeout(function(){
-			document.getElementById("setting1").style.display="block";
+			//document.getElementById("setting1").style.display="block";
 		document.getElementById("settings").style.display="block";
 		},500);
 		 six=0;
@@ -160,7 +227,7 @@ var six=0;
 		TweenMax.to('#seventh',.3,{y:-1140});
 		document.getElementById("seventh").style.opacity=".8";
 		document.getElementById("settings").style.display="none";
-		document.getElementById("setting1").style.display="none";
+		//document.getElementById("setting1").style.display="none";
 		document.getElementById("contact").style.display="none";
 		document.getElementById('first').style.display = "none";
 		document.getElementById('second').style.display = "none";
@@ -179,9 +246,9 @@ var six=0;
 	 else 
 	 {
 		document.getElementById('helppage').style.display = "none";
-		 document.getElementById("seventh").style.width="27%";
-		document.getElementById("seventh").style.height="11%";
-		document.getElementById("seventh").style.right="5%";
+		 document.getElementById("seventh").style.width="27.5%";
+		document.getElementById("seventh").style.height="15%";
+		document.getElementById("seventh").style.right="32.8%";
 		document.getElementById("seventh").style.opacity=".2";
 		TweenMax.to('#seventh',.3,{y:0});
 		setTimeout(function(){
@@ -196,7 +263,7 @@ var six=0;
 		document.getElementById("contact").style.display="block";
 		},300);
 		setTimeout(function(){
-			document.getElementById("setting1").style.display="block";
+			//document.getElementById("setting1").style.display="block";
 		document.getElementById("settings").style.display="block";
 		},500);
 		seven=0;
@@ -294,8 +361,24 @@ function sidebar_show(){
 	}
 }
 
+var next=0;
+function nexti(){
+	if(next==0){
+		document.getElementById("gif").style.display="none";
+		document.getElementById("lineone").style.display="none";
+		document.getElementById("giftwo").style.display="block";
+		giftwo.className="animated fadeIn";
+		document.getElementById("linetwo").style.display="block";
+	}
+}
 
-
+var click=0;
+function clicki(){
+	if(click==0){
+		document.getElementById("pageOne").style.display="none";
+		document.getElementById("mainPage").style.display="block";
+	}
+}
 
 
 
