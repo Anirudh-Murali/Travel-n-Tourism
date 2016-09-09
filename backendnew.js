@@ -48,11 +48,11 @@ var first = 0
 function bigfirst(){
 	
 	if(first==0){
-		document.getElementById("first").style.right="0%";
+		
 		document.getElementById("first").style.width="100%";
 		document.getElementById("first").style.height="20%";
-		TweenMax.to('#first',.3,{y:-1330});
-		document.getElementById("first").style.opacity=".8";
+		TweenMax.to('#first',.3,{x:0,y:-300});
+		
 		document.getElementById("contact").style.display="none";
 	//	document.getElementById('first').style.display = "none";
 		document.getElementById('second').style.display = "none";
@@ -65,6 +65,7 @@ function bigfirst(){
 		document.getElementById('setting1').style.display = "none";
 		document.getElementById('help1').style.display = "none";
 		document.getElementById('settings').style.display = "none";
+		document.getElementById("blogHeader").style.opacity=".8";
 		setTimeout(function(){
 			document.getElementById('blogPage').style.display = "block";
 			heading.className="animated fadeIn";
@@ -99,11 +100,273 @@ function bigfirst(){
 		document.getElementById('setting1').style.display = "block";
 		document.getElementById('help1').style.display = "block";
 		document.getElementById('settings').style.display = "block";
+		document.getElementById("contact").style.display="block";		
 		},300);
 		setTimeout(function(){
-			document.getElementById("contact").style.display="block";
+			
 		},700);
 		first=0;
+	}
+	
+}
+
+var second = 0
+function bigsecond(){
+	
+	if(second==0){
+		
+		document.getElementById("second").style.width="100%";
+		document.getElementById("second").style.height="20%";
+		TweenMax.to('#second',.3,{y:-1330});
+		document.getElementById("second").style.opacity=".8";
+		document.getElementById("contact").style.display="none";
+		document.getElementById('first').style.display = "none";
+	//	document.getElementById('second').style.display = "none";
+		document.getElementById('third').style.display = "none";
+		document.getElementById('fourth').style.display = "none";
+		document.getElementById('fifth').style.display = "none";
+		document.getElementById('sixth').style.display = "none";
+		document.getElementById('seventh').style.display = "none";
+		document.getElementById('eight').style.display = "none";
+		document.getElementById('setting1').style.display = "none";
+		document.getElementById('help1').style.display = "none";
+		document.getElementById('settings').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('wgPage').style.display = "block";
+			wgPage.className="animated fadeIn";
+		},300);
+		setTimeout(function(){
+			document.getElementById('wgHeader').style.display = "block";
+			wgHeader.className="animated fadeIn";
+		},300);
+		second =1;
+	}
+	else if(second == 1){
+		
+		TweenMax.to('#second',.3,{x:0,y:0});
+		document.getElementById("second").style.width="34%";
+		document.getElementById("second").style.height="38%";
+		document.getElementById("second").style.right="5%";
+		document.getElementById("second").style.opacity=".2";
+		document.getElementById('wgPage').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('wgHeader').style.display = "none";
+			wgHeader.className="animated fadeOut";
+		},0001);
+		setTimeout(function(){
+		document.getElementById('first').style.display = "block";
+	//	document.getElementById('second').style.display = "block";
+		document.getElementById('third').style.display = "block";
+		document.getElementById('fourth').style.display = "block";
+		document.getElementById('fifth').style.display = "block";
+		document.getElementById('sixth').style.display = "block";
+		document.getElementById('seventh').style.display = "block";
+		document.getElementById('eight').style.display = "block";
+		document.getElementById('setting1').style.display = "block";
+		document.getElementById('help1').style.display = "block";
+		document.getElementById('settings').style.display = "block";
+		document.getElementById("contact").style.display="block";		
+		},300);
+		setTimeout(function(){
+			
+		},700);
+		second=0;
+	}
+	
+}
+
+var third = 0
+function bigthird(){
+	
+	if(third==0){
+		
+		document.getElementById("third").style.width="100%";
+		document.getElementById("third").style.height="20%";
+		TweenMax.to('#third',.3,{y:-1230});
+		document.getElementById("third").style.opacity=".8";
+		document.getElementById("contact").style.display="none";
+		document.getElementById('first').style.display = "none";
+		document.getElementById('second').style.display = "none";
+	//	document.getElementById('third').style.display = "none";
+		document.getElementById('fourth').style.display = "none";
+		document.getElementById('fifth').style.display = "none";
+		document.getElementById('sixth').style.display = "none";
+		document.getElementById('seventh').style.display = "none";
+		document.getElementById('eight').style.display = "none";
+		document.getElementById('setting1').style.display = "none";
+		document.getElementById('help1').style.display = "none";
+		document.getElementById('settings').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('cpPage').style.display = "block";
+			cpPage.className="animated fadeIn";
+		},300);
+		setTimeout(function(){
+			document.getElementById('cpHeader').style.display = "block";
+			cpHeader.className="animated fadeIn";
+		},300);
+		third =1;
+	}
+	else if(third == 1){
+		
+		TweenMax.to('#third',.3,{y:0});
+		document.getElementById("third").style.width="55.5%";
+		document.getElementById("third").style.height="18%";
+
+		document.getElementById("third").style.right="5%";
+		document.getElementById("third").style.opacity=".2";
+		document.getElementById('cpPage').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('cpHeader').style.display = "none";
+			cpHeader.className="animated fadeOut";
+		},0001);
+		setTimeout(function(){
+		document.getElementById('first').style.display = "block";
+		document.getElementById('second').style.display = "block";
+	//	document.getElementById('third').style.display = "block";
+		document.getElementById('fourth').style.display = "block";
+		document.getElementById('fifth').style.display = "block";
+		document.getElementById('sixth').style.display = "block";
+		document.getElementById('seventh').style.display = "block";
+		document.getElementById('eight').style.display = "block";
+		document.getElementById('setting1').style.display = "block";
+		document.getElementById('help1').style.display = "block";
+		document.getElementById('settings').style.display = "block";
+		document.getElementById("contact").style.display="block";		
+		},300);
+		setTimeout(function(){
+			
+		},700);
+		third=0;
+	}
+	
+}
+
+var fourth = 0
+function bigfourth(){
+	
+	if(fourth==0){
+		
+		document.getElementById("fourth").style.width="100%";
+		document.getElementById("fourth").style.height="20%";
+		TweenMax.to('#fourth',.3,{y:-1230});
+		document.getElementById("fourth").style.opacity=".8";
+		document.getElementById("contact").style.display="none";
+		document.getElementById('first').style.display = "none";
+		document.getElementById('second').style.display = "none";
+		document.getElementById('third').style.display = "none";
+	//	document.getElementById('fourth').style.display = "none";
+		document.getElementById('fifth').style.display = "none";
+		document.getElementById('sixth').style.display = "none";
+		document.getElementById('seventh').style.display = "none";
+		document.getElementById('eight').style.display = "none";
+		document.getElementById('setting1').style.display = "none";
+		document.getElementById('help1').style.display = "none";
+		document.getElementById('settings').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('bdPage').style.display = "block";
+			bdPage.className="animated fadeIn";
+		},300);
+		setTimeout(function(){
+			document.getElementById('bdHeader').style.display = "block";
+			bdHeader.className="animated fadeIn";
+		},300);
+		fourth =1;
+	}
+	else if(fourth == 1){
+		
+		TweenMax.to('#fourth',.3,{y:0});
+		document.getElementById("fourth").style.width="27.5%";
+		document.getElementById("fourth").style.height="20%";
+		document.getElementById("fourth").style.right="5%";
+		document.getElementById("fourth").style.opacity=".2";
+		document.getElementById('bdPage').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('bdHeader').style.display = "none";
+			bdHeader.className="animated fadeOut";
+		},0001);
+		setTimeout(function(){
+		document.getElementById('first').style.display = "block";
+		document.getElementById('second').style.display = "block";
+		document.getElementById('third').style.display = "block";
+	//	document.getElementById('fourth').style.display = "block";
+		document.getElementById('fifth').style.display = "block";
+		document.getElementById('sixth').style.display = "block";
+		document.getElementById('seventh').style.display = "block";
+		document.getElementById('eight').style.display = "block";
+		document.getElementById('setting1').style.display = "block";
+		document.getElementById('help1').style.display = "block";
+		document.getElementById('settings').style.display = "block";
+		document.getElementById("contact").style.display="block";
+				
+		},300);
+		setTimeout(function(){
+	},700);
+		fourth=0;
+	}
+	
+}
+
+var fifth = 0
+function bigfifth(){
+	
+	if(fifth==0){
+		
+		document.getElementById("fifth").style.width="100%";
+		document.getElementById("fifth").style.height="20%";
+		TweenMax.to('#fifth',.3,{y:-1230});
+		document.getElementById("fifth").style.opacity=".8";
+		document.getElementById("contact").style.display="none";
+		document.getElementById('first').style.display = "none";
+		document.getElementById('second').style.display = "none";
+		document.getElementById('third').style.display = "none";
+		document.getElementById('fourth').style.display = "none";
+       	//	document.getElementById('fifth').style.display = "none";
+		document.getElementById('sixth').style.display = "none";
+		document.getElementById('seventh').style.display = "none";
+		document.getElementById('eight').style.display = "none";
+		document.getElementById('setting1').style.display = "none";
+		document.getElementById('help1').style.display = "none";
+		document.getElementById('settings').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('hdPage').style.display = "block";
+			hdPage.className="animated fadeIn";
+		},300);
+		setTimeout(function(){
+			document.getElementById('hdHeader').style.display = "block";
+			hdHeader.className="animated fadeIn";
+		},300);
+		fifth =1;
+	}
+	else if(fifth == 1){
+		
+		TweenMax.to('#fifth',.3,{y:0});
+		document.getElementById("fifth").style.width="27.5%";
+		document.getElementById("fifth").style.height="20%";
+		document.getElementById("fifth").style.right="32.8%";
+		document.getElementById("fifth").style.opacity=".2";
+		document.getElementById('hdPage').style.display = "none";
+		setTimeout(function(){
+			document.getElementById('hdHeader').style.display = "none";
+			hdHeader.className="animated fadeOut";
+		},0001);
+		setTimeout(function(){
+		document.getElementById('first').style.display = "block";
+		document.getElementById('second').style.display = "block";
+		document.getElementById('third').style.display = "block";
+		document.getElementById('fourth').style.display = "block";
+	//	document.getElementById('fifth').style.display = "block";
+		document.getElementById('sixth').style.display = "block";
+		document.getElementById('seventh').style.display = "block";
+		document.getElementById('eight').style.display = "block";
+		document.getElementById('setting1').style.display = "block";
+		document.getElementById('help1').style.display = "block";
+		document.getElementById('settings').style.display = "block";
+		document.getElementById("contact").style.display="block";		
+		},300);
+		setTimeout(function(){
+			
+		},700);
+		fifth=0;
 	}
 	
 }
