@@ -50,12 +50,14 @@
 }
 #gif{
 	position:absolute;
+
 	top: 5%;
 	left: 5%;
 	height: 60%;
 	width: 90%;
 	
 }
+
 #Next{
 	position:absolute;
 	bottom: 18%;
@@ -118,7 +120,7 @@
 	height : 110%;
 	width: 100%;
 	background: indigo;
-	background: linear-gradient(to bottom left,#4D99B3,white,#4D99B3);
+	background: linear-gradient(to bottom left,#4D99B3,#81f191,#4D99B3);
 }
 
 #ultaTriangle {
@@ -135,9 +137,10 @@
 	position: absolute;
 	top:-100%;
 	left:0%;
-width: 100%;
+	width: 100%;
 	height: 140%;
 	background: white;
+	opacity:.5;
 }
 #foot{
 	position: absolute;
@@ -198,6 +201,8 @@ width: 100%;
 	background:white;
 	opacity:.2;
 }
+
+
 #second{
 	position:absolute;
 	top:32%;
@@ -294,7 +299,7 @@ width: 100%;
 	top:20%;
 	height:80%;
 	width:100%;
-	background:red;
+	
 }
 #settingpage{
 	display:none;
@@ -302,7 +307,7 @@ width: 100%;
 	top:20%;
 	height:80%;
 	width:100%;
-	background:red;
+	
 }
 #helppage{
 	display:none;
@@ -310,7 +315,7 @@ width: 100%;
 	top:20%;
 	height:80%;
 	width:100%;
-	background:red;
+	
 }
 #setting1{
 	display:block;
@@ -535,3 +540,294 @@ width: 100%;
 	font-family: "Times New Roman", Georgia, Serif;
 }
 
+.page{
+	display:none;
+	position:absolute;
+	top:0%;
+	left:3%;
+	height:110%;
+	width:100%;
+	background:white;
+}
+
+.title{
+	font-size:700%;
+	font-family: "Times New Roman", Georgia, Serif;
+	color:black;
+	text-align:center;
+	margin : 30px;
+}
+
+#blogs{
+	position: absolute;
+	top: 40%;
+	left:-1%;
+	height: 65%;
+	width: 80%;
+	font-size:250%;
+	font-family: "Times New Roman", Georgia, Serif;
+	color:black;
+	opacity: .3;
+    display:none;
+	padding:3%;
+	margin:3%;
+	background:white;
+		
+}
+
+#blogss{
+    display:none;
+	position: absolute;
+	top: -30%;
+	left:0%;
+	font-size:250%;
+	font-family: "Times New Roman", Georgia, Serif;
+	color:black;
+	height: 50%;
+	width: 80%;
+	padding:3%;
+	margin:3%;
+	background:white;
+	opacity:.3;	
+}
+.thebody{
+	font-size:250%;
+	font-family: "Times New Roman", Georgia, Serif;
+	color:black;
+}
+.bodytitle{
+	font-size:400%;
+	font-family: "Times New Roman", Georgia, Serif;
+	color:black;
+}
+.bodytitlewhite{
+	font-size:400%;
+	font-family: "Times New Roman", Georgia, Serif;
+	color:white;
+}
+
+table.ex1 td{
+    text-align: center;
+    padding:100px;
+    margin:5px;
+    background:black;
+}
+
+table.ex1 {
+    border-collapse: separate;
+    border-spacing: 50px;
+}
+
+.thebox{
+	font-size:400%;
+	font-family: "Times New Roman", Georgia, Serif;
+	color:white;
+	
+}
+
+input[type=text] {
+    width: 94%;
+    padding: 25px 30px;
+    margin: 10px 0px;
+    font-size:100%;
+}
+
+input[type=submit] {
+    width: 94%;
+    padding: 25px 30px;
+    margin: 10px 0px;
+    font-size: 100%;
+}
+
+input[type=date] {
+    width: 50%;
+    padding: 25px 30px;
+    margin: 10px 0px;
+    font-size: 100%;
+    right:5%;
+}
+
+input[type=number] {
+
+    width: 50%;
+    padding: 25px 30px;
+    margin: 10px 0px;
+    font-size: 100%;
+    
+}
+
+input[type=radio] {
+    width: 94%;
+    padding: 25px;
+    margin: 10px;
+    font-size: 100%;
+    transform:scale(4);
+}
+
+#Next1{
+        display:none;
+	position:absolute;
+	bottom: 18%;
+	left: 41.5%;
+	font-size: 10vw;
+	color:yellow;
+}
+
+#blogHeader{
+        opacity:.2;
+	display:none;
+	background:white;	
+	position:absolute;
+
+	top:5%;
+	left:0%%;
+	font-size: 700%;
+        
+        
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+#blogPage{
+	display:none;
+	position:absolute;
+	top:20%;
+	height:80%;
+	width:100%;
+	
+}
+
+#wgPage{
+	display:none;
+	position:absolute;
+	top:20%;
+	height:80%;
+	width:100%;
+	
+}
+
+
+#wgHeader{
+        opacity:.2;
+	display:none;
+	background:white;	
+	position:absolute;
+
+	top:5%;
+	left:0%;
+	font-size: 700%;
+        
+        
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+#cpPage{
+	display:none;
+	position:absolute;
+	top:20%;
+	height:80%;
+	width:100%;
+	
+}
+
+
+#cpHeader{
+        opacity:.2;
+	display:none;
+	background:white;	
+	position:absolute;
+
+	top:5%;
+	left:0%;
+	font-size: 700%;
+        
+        
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+#bdPage{
+	display:none;
+	position:absolute;
+	top:20%;
+	height:80%;
+	width:100%;
+	
+}
+
+
+#bdHeader{
+    opacity:.2;
+	display:none;
+	background:white;	
+	position:absolute;
+
+	top:5%;
+	left:0%;
+	font-size: 700%;
+        
+        
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+#hdPage{
+	display:none;
+	position:absolute;
+	top:20%;
+	height:80%;
+	width:100%;
+	
+}
+
+
+#hdHeader{
+        opacity:.2;
+	display:none;
+	background:white;	
+	position:absolute;
+
+	top:5%;
+	left:0%;
+	font-size: 700%;
+        
+        
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+#blogme{
+	position:absolute;
+	top:15%;
+	left:25%;
+	font-family:"Times New Roman", Georgia, Sans-Serif;
+	font-size:500%;
+	color:white;
+}
+
+#festiveme{
+	position:absolute;
+	top:47%;
+	left:0.5%;
+	transform: rotate(90deg);
+	/*transform-origin: left 5% top 34%;*/
+	font-family:"Times New Roman", Georgia, Sans-Serif;
+	font-size:400%;
+	color:white;
+}
+#perfectme{
+	position:absolute;
+	top:35%;
+	right:5%;
+	font-family:"Times New Roman", Georgia, Sans-Serif;
+	font-size:400%;
+	color:white;
+}
+#hotelme{
+	position:absolute;
+	top:51%;
+	right:5%;
+	display:block;
+}
+#flightme{
+	display:block;
+	position:absolute;
+	top:51%;
+	right:37%;
+}
