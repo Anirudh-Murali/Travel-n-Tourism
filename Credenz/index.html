@@ -1,0 +1,202 @@
+<html>
+<head>
+
+  <script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<!--<script src="js/materialize.js"></script>-->
+  <script src="js/backend.js"></script>
+    <link href="design/frontend.css" rel="stylesheet">
+      <link rel="stylesheet" href="design/animate.css" >
+	  <script src="js/TweenMax.min.js"></script>
+      <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+</head>
+<body style="overflow:hidden"  > 
+	
+	<div style="overflow:hidden" id="appMainScreen" onload="resolution()">
+		<div id="flash" >
+			<img src="assets/images/33.gif" height="100%" width="100%" onload="login()"/>
+			<div id="heading">Tempo Deals</div>
+		</div>
+	<div id="pageOne" onload="pageone()">
+		<div id="pageOneFoot" onclick="clicki()"></div>
+		<div id="pageOneCircle" onclick="nexti()"></div>
+		<div id="Next" onclick="nexti()">Next</div>
+                 <div id="Next1" onclick="next1()">Next</div>
+		<div id="skip" onclick="clicki()">skip</div>
+		<div id="gif"><img src="assets/images/34.gif" height="100%" width="100%" /></div>
+		<div id="lineone">Dream Big</div>
+		<div id="giftwo"></div>
+
+		<div id="linetwo">Let Us Do The Rest</div>
+	</div>
+	<div id="pageThree"></div>
+		<div id="mainPage" style="overflow:hidden">			
+			<div id="triangle-down2"style="overflow:hidden" class="squarebox">
+			<img src="assets/images/4.gif" height="140%" width="100%"/>
+			</div>
+			<div id="ultaTriangle"/ style="overflow:hidden" class="triangle"></div>
+			<div id="facebook" onclick="slide()"><img src="assets/images/11g.gif" height="100%" width="100%" /></div>
+			<div id="google" onclick="slide()"><img src="assets/images/11g.gif" height="100%" width="100%" /></div>
+		</div>
+		<div id="home1" >
+	<img src="assets/images/second.jpg" height="100%" width="100%" />
+
+
+					
+					<div id="first" onclick="bigfirst()"></div>
+					<div id="blogme" onclick="bigfirst()">BLOGS</div>
+					<div id="second" onclick="bigsecond()" ></div>
+					<div id="festiveme" onclick="bigsecond()">SPECIAL DAYS</div>
+					<div id="third" onclick="bigthird()"></div>
+					<div id="perfectme" onclick="bigthird()">THE PERFECT <br>
+						OUTING</div>
+					<div id="fourth" onclick="bigfourth()"></div>
+					<div id="hotelme" onclick="bigfifth()"><img src="assets/images/51.png" height="20%" width="110%"/></div>
+					<div id="fifth" onclick="bigfifth()"></div>
+					<div id="flightme" onclick="bigfourth()"><img src="assets/images/52.png" height="20%" width="125%"/></div>
+					<div id="sixth" onclick="bigsix()"></div>
+					<div id="seventh" onclick="bigseven()"></div>
+					<div id="eight" onclick="bigeight()"></div>
+					<div id="settings" onclick="bigsix()"><img src="assets/images/18.png" height="100%" width="100%"/></div>
+					<div id="setting1" onclick="bigsix()"></div>
+					<div id="help1" onclick="bigseven()"><img src="assets/images/27.png" height="100%" width="100%"/></div>
+					
+					<div id="contact" onclick="bigeight()"><img src="assets/images/28.png" height="100%" width="100%" /></div>
+				</div>
+				<div id="contactpage"></div>
+				<div id="contactus" onclick="bigeight()">Contact Us</div>
+				<div id="settingpage"></div>
+			
+ 				<div id="blogHeader" onclick="bigfirst()">Travel To Your Heart</div>
+
+				<div id="blogPage" >
+					<div id="blogpage">
+		<!--	<img>-->
+			
+			<div id="blogs" >
+				<p><class="bodytitle">GUIDE TO EXPERIENCING THE MALDIVES</class></p>
+				I've always been interested in seeing the Maldives and I finally went! I wanted to see both of its sides: the touristy parts and the realer, everyday parts. The side I ended up liking most surprised me, along with the fact that it cheaper than I expected. Here's how I was able to do the Maldives on a budget.
+			</div>
+			
+			<div id="blogss">
+				<p><class="bodytitle">HOW TO TRAVEL HACK IN AUSTRALIA AND NEW ZEALAND</class></p>
+				Keith Mason is the founder of Points Hack, an Australian travel hacking website. He works to make the art of using frequent flyer and spending rewards programs more accessible to Australians. In this interview, he shares how he got started and how other Australians (and New Zealanders) can get started as well.
+			</div>
+		</div>
+				 </div>
+                               
+				<div id="wgHeader" onclick="bigsecond()">Best places to escape to!</div>
+	
+				<div id="wgPage" >
+				
+			<div class="title"><p>COMING SOON</p></div>
+			<div class="thebody"></div>
+		</div>
+
+				</div> 
+
+				<div id="cpPage" class="page">
+
+		
+			<div class="title">Trip Plan</div>
+			<table class="ex1"  >
+				<tr><td><div class="thebox">one plan</div></td>
+				<td><div class="thebox">two plan</div></td>
+				</tr>
+				
+				<tr>
+				<td><div class="thebox">three plan</div></td>
+				<td><div class="thebox">four plan</div></td>
+				
+				</tr>
+				<tr><td><div class="thebox">five plan</div></td>
+				<td><div class="thebox">six plan</div></td>
+				</tr>
+			</table>
+		</div>
+
+
+	</div>
+				
+				<div id="cpHeader" onclick="bigthird()">Best Plans and Best Deals</div>
+
+				<div id="bdPage"  class="page">
+
+					<div class="title">Plane Ticket</div>
+					<div class="bodytitle">
+					<form action="action_page.php">
+					    <label for="to">TO</label>
+					    <input type="text" id="to" name="toplace">
+
+					    <label for="from">FROM</label>
+					    <input type="text" id="from" name="fromplace">
+
+					    <label for="date">DATE</label>
+					    <input type="date" id="date" name="date">
+					  
+					  	<input type="radio" name="trip" value="round" checked> Round Trip</br>
+		  				<input type="radio" name="trip" value="oneway"> One-Way</br>
+					    <input type="submit" value="Submit">
+					  </form>
+					  </div>
+				</div>
+
+				
+				<div id="bdHeader" onclick="bigfourth()">Best Deals on Travel</div>
+                
+				<div id="hdPage" class="page">
+
+			<div class="title">Hotel Booking</div>
+			<div class="bodytitlewhite">
+			<form action="action_page.php">
+			    <label for="where">WHERE</label>
+			    <input type="text" id="where" name="placewhere">
+
+			    <label for="checkin">CHECK - IN</label>
+			    <input type="date" id="checkin" name="datein">
+			    <label for="checkout">CHECK- OUT</label>
+			    <input type="date" id="checkout" name="dateout">
+			  
+			  	<label for="rooms">NO OF ROOMS</label>
+			  	<input type="number" id="rooms" name="noofrooms">
+			    <input type="submit" value="Submit">
+			  </form>
+			  </div>
+		</div>
+
+					</div>
+				<div id="hdHeader" onclick="bigfifth()">Hot deals on the best hotels</div>
+                
+		
+			
+		
+		<div id="contactpage"></div>
+		<div id="contactus" onclick="bigeight()">Contact Us</div>
+		<div id="settingpage"></div>
+		<div id="helppage"></div>
+	  <!-- <div id="home" class="">
+		   <div id="head"></div>
+		   <div id="bars" onclick="sidebar_show()" ><i class="fa fa-bars fa-5x bars"></i></div>
+		   <div id="outer" onclick="sidebar_show()"></div>
+		   <div id="sidebar">
+		   <div id="user"></div>
+		   <div id="sideprofile"><i class="fa fa-users fa-5x user"></i></div>
+		   <div id="prof">Profile</div>
+		   <div id="sidemenu2"><i class="fa fa-folder fa-5x folder"></i></div>
+		   <div id="folder">Folder</div>
+		   <div id="sidemenu3"><i class="fa fa-star fa-5x star"></i></div>
+		   <div id="star">Star</div>
+		   <div id="sidemenu4"><i class="fa fa-paper-plane fa-5x plane"></i></div>
+		   <div id="important">Important</div>
+		   <div id="sidemenu5"><i class="fa fa-shopping-cart fa-5x cart"></i></div>
+		   <div id="bin">Bin</div>
+		   <div id="sidemenu6"><i class="fa fa-question-circle fa-5x question"></i></div>
+		   <div id="help">Help</div>
+		   <div id="sidemenu7"><i class="fa fa-cogs fa-5x set"></i></div>
+		   <div id="setting"></div>
+		   </div>-->
+	   </div>
+		<!--</div>-->
+	</div>
+</body>
+</html>
